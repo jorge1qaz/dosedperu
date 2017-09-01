@@ -1,0 +1,73 @@
+.content-fake
+.container
+    br
+    br
+    br
+    br
+    .row
+        .col-md-12.col-xs-12
+            img(src="../images/logo_big.png", alt="imagen de logo").img-responsive
+#ModalContacto.modal.fade(tabindex='-1', role='dialog', aria-labelledby='ModalLabel')
+    .modal-dialog(role='document')
+        .modal-content
+            .modal-header.bg-primary
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                h3#ModalLabel.modal-title Contacto DOSED
+            .modal-body
+                .form-group
+                    h4 Gracias por su interés en DOSED. Por favor, complete el formulario para mandarnos un mensaje
+                    em Los campos marcados con un asterisco (*) son obligatorios.
+                .form-group
+                    label.control-label(for='list-tipoConsulta') Tipo de consulta *
+                    select#list-tipoConsulta.form-control
+                        option(value='') Seleccione una opción
+                        option(data-val='information', value='Request Information') Solicitar información
+                        option(data-val='quotation', value='Request Quotation') Solicitar presupuesto
+                        option(data-val='jobs', value='Recruitment & Jobs') Contratación y empleos
+                        option(data-val='documents', value='Verify SGS documents') Certificado o informe de autenticación
+                        option(data-val='feedback', value='Provide Your Feedback') Enviar sus comentarios
+                .form-group
+                    label.control-label(for='txt-nombre') Nombre *
+                    input#txt-nombre.form-control(type='text')
+                .form-group
+                    label.control-label(for='txt-apellido') Apellidos *
+                    input#txt-apellido.form-control(type='text')
+                .form-group
+                    label.control-label(for='message-text') Nombre de la empresa
+                    input#txt-empresa.form-control(type='text')
+                .form-group
+                    label.control-label(for='list-metodoContacto') Método preferido de contacto *
+                    br
+                    input#cb-email(type="checkbox")
+                    label.control-label(for='cb-email') Correo electrónico
+                    br
+                    input#cb-telefono(type="checkbox")
+                    label.control-label(for='cb-telefono') Llamada telefónica
+                    br
+                    input#cb-whatsapp(type="checkbox")
+                    label.control-label(for='cb-whatsapp') Whatsapp
+                .form-group
+                    label.control-label(for='txt-email') Correo electrónico *
+                    input#txt-email.form-control(type='text')
+                .form-group
+                    label.control-label(for='txt-telefono') Télefono/Celular
+                    input#txt-telefono.form-control(type='text')
+                .form-group
+                    label.control-label(for='txt-whatsapp') Número de Whatsapp
+                    input#txt-whatsapp.form-control(type='text')
+                .form-group
+                    label.control-label(for='txt-mensaje') ¿Cómo podemos ayudarle? *
+                    textarea#txt-mensaje.form-control(rows="4")
+            .modal-footer
+                button.btn.btn-default(type='button', data-dismiss='modal') Cerrar
+                button.btn.btn-primary(type='button') Enviar mensaje
+script.
+    $(document).ready(function(){
+        $("#ModalContacto").modal("show");
+        $(".container").mouseover(function(){
+            window.location.href = "../html/home.html";
+        });
+    });
+
+

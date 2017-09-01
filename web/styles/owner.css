@@ -1,0 +1,77 @@
+.boton-home {
+    width: 100%;
+    padding: 9px 13px;
+    border-radius: 6px;
+    background: #344174;
+    transition: all 0.5s;
+    color: white;
+}
+.primary-text {
+    color: #344174;
+}
+
+
+.boton-home:hover {
+    background: #3C3C3C;
+    color: black;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding-left: 30px;
+}
+.content-home {
+    min-height: 615px;
+}
+
+.adress-content {
+    background-color: #0f0f0f;
+    opacity: 0.72;
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    height: auto;
+    margin-left: -10%;
+    border-radius: 7px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    margin-top: 32%;
+}
+p {
+    font-family: "roboto";
+  }
+.text-roboto {
+    font-family: "roboto" !important;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+@media screen and (max-width: 480px)  {
+    .adress-content {
+        width: 90%;
+        margin-left: 0%;
+    }
+}
+.table-list tr:hover {
+    background-color: #344174;
+    color: white;
+    cursor: pointer;
+}
+.map-content {
+
+    background-color: gainsboro;
+    position: absolute;
+    opacity: 0.72;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.content-fake {
+    width: 100%;
+    height: 100%;
+}
+
+.content-details-product {
+    min-height: 160px;
+    max-height: 160px;
+    width: 90%;
+}

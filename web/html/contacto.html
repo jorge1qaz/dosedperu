@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta name="keywords" content="peru,huancayo"/>
+  <meta name="description" content=""/>
+  <meta name="author" content="DOSED SAC"/>
+  <script src="../js/bin/jquery.js"></script>
+  <!-- Latest compiled and minified CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <!-- Optional theme-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+  <!-- Latest compiled and minified JavaScript-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
+<body>
+  <div class="content-fake"></div>
+  <div class="container"><br/><br/><br/><br/>
+    <div class="row">
+      <div class="col-md-12 col-xs-12"><img class="img-responsive" src="../images/logo_big.png" alt="imagen de logo"/></div>
+    </div>
+  </div>
+  <div class="modal fade" id="ModalContacto" tabindex="-1" role="dialog" aria-labelledby="ModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h3 class="modal-title" id="ModalLabel">Contacto DOSED</h3>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <h4>Gracias por su interés en DOSED. Por favor, complete el formulario para mandarnos un mensaje</h4><em>Los campos marcados con un asterisco (*) son obligatorios.</em>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="list-tipoConsulta">Tipo de consulta *</label>
+            <select class="form-control" id="list-tipoConsulta">
+              <option value="">Seleccione una opción</option>
+              <option data-val="information" value="Request Information">Solicitar información</option>
+              <option data-val="quotation" value="Request Quotation">Solicitar presupuesto</option>
+              <option data-val="jobs" value="Recruitment &amp; Jobs">Contratación y empleos</option>
+              <option data-val="documents" value="Verify SGS documents">Certificado o informe de autenticación</option>
+              <option data-val="feedback" value="Provide Your Feedback">Enviar sus comentarios</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="txt-nombre">Nombre *</label>
+            <input class="form-control" id="txt-nombre" type="text"/>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="txt-apellido">Apellidos *</label>
+            <input class="form-control" id="txt-apellido" type="text"/>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="message-text">Nombre de la empresa</label>
+            <input class="form-control" id="txt-empresa" type="text"/>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="list-metodoContacto">Método preferido de contacto *</label><br/>
+            <input id="cb-email" type="checkbox"/>
+            <label class="control-label" for="cb-email">Correo electrónico</label><br/>
+            <input id="cb-telefono" type="checkbox"/>
+            <label class="control-label" for="cb-telefono">Llamada telefónica</label><br/>
+            <input id="cb-whatsapp" type="checkbox"/>
+            <label class="control-label" for="cb-whatsapp">Whatsapp</label>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="txt-email">Correo electrónico *</label>
+            <input class="form-control" id="txt-email" type="text"/>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="txt-telefono">Télefono/Celular</label>
+            <input class="form-control" id="txt-telefono" type="text"/>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="txt-whatsapp">Número de Whatsapp</label>
+            <input class="form-control" id="txt-whatsapp" type="text"/>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="txt-mensaje">¿Cómo podemos ayudarle? *</label>
+            <textarea class="form-control" id="txt-mensaje" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default" type="button" data-dismiss="modal">Cerrar</button>
+          <button class="btn btn-primary" type="button">Enviar mensaje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+        $("#ModalContacto").modal("show");
+        $(".container").mouseover(function(){
+            window.location.href = "../html/home.html";
+        });
+    });
+  </script>
+  <script src="../js/generalidades.js"></script>
+  <div class="center">
+    <div class="card white"><img src="../images/opciones/facebook-box.png" alt="logo facebook"/><img src="../images/opciones/twitter-box.png" alt="logo twitter"/></div>
+  </div>
+  <div class="grey darken-2">
+    <div class="center">
+      <label>DOSED SAC Ingeniería y construción - 2017. Todos los derechos reservados.</label>
+    </div>
+  </div>
+</body>
