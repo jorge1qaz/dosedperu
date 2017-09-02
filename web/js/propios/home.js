@@ -47,6 +47,13 @@ $(function(){
         });
     });
 
+    $("#imgEXCEL").on("mouseenter", function() {
+        $(this).css('cursor','pointer')
+        .on("click", function() {
+        window.location.href = "../docs/Lista_de_precios.xlsx";
+        })
+    });
+
     var $block_1 = $("#block_1");
     var $block_2 = $("#block_2");
     var $block_3 = $("#block_3");
