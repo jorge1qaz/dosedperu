@@ -55,21 +55,21 @@ $(function(){
     var $block_6 = $("#block_6");
 
     $block_1.on("click", function() {
-        $(this).attr("src", "../images/servicios/1200px/consultoria.png");
+        $(this).attr("src", "../images/Servicios/1200px/consultoria.png");
     });
     $block_2.on("click", function() {
-        $(this).attr("src", "../images/servicios/1200px/laboratorio2.png");
+        $(this).attr("src", "../images/Servicios/1200px/laboratorio2.png");
     });
     $block_3.on("click", function() {
-        $(this).attr("src", "../images/servicios/1200px/topografia2.png");
+        $(this).attr("src", "../images/Servicios/1200px/topografia2.png");
     });
     $block_4.on("click", function() {
-        $(this).attr("src", "../images/servicios/1200px/cielo2.png");
+        $(this).attr("src", "../images/Servicios/1200px/cielo2.png");
     });
     $block_5.on("click", function() {
-        $(this).attr("src", "../images/servicios/1200px/construcion.png");
+        $(this).attr("src", "../images/Servicios/1200px/construcion.png");
     });
     $block_6.on("click", function() {
-        $(this).attr("src", "../images/servicios/1200px/puente.png");
+        $(this).attr("src", "../images/Servicios/1200px/puente.png");
     });
 });
