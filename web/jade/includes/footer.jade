@@ -2,8 +2,17 @@ script(src="../js/generalidades.js")
 
 .center
     .card.white
-        img(src="../images/opciones/facebook-box.png", alt="logo facebook")
-        img(src="../images/opciones/twitter-box.png", alt="logo twitter")
+        img#iconFB(src="../images/opciones/facebook-box.png", alt="logo facebook")
+        img#iconTW(src="../images/opciones/twitter-box.png", alt="logo twitter")
 .grey.darken-2
     .center
         label DOSED SAC Ingeniería y construción - 2017. Todos los derechos reservados.
+script.
+    $(function() {
+        $("#iconFB").on("mouseover", function () {
+            $(this).css("cursor", "pointer")
+            .on("click", function() {
+                window.location.href = "https://web.facebook.com/Dosed-Sac-520541444743360/?ref=br_rs";
+            });
+        });
+    });

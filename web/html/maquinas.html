@@ -24,22 +24,28 @@
         <ul class="right hide-on-med-and-down" id="nav-mobile" style="margin-right: 30px;">
           <li><a class="waves-effect waves-green black-text" href="../html/home.html">Inicio</a></li>
           <li><a class="waves-effect waves-green black-text" href="../html/nosotros.html">Nosotros</a></li>
-          <li><a class="waves-effect waves-green black-text" href="../html/servicios.html">Servicios</a></li>
+          <li><a class="waves-effect waves-green black-text" href="../html/servicios.html">
+              <!--| Servicios--></a></li>
           <li><a class="waves-effect waves-green black-text" javascript: void(0)="javascript: void(0)"> </a></li>
-          <li><a class="waves-effect waves-green black-text" href="../html/cotizador.html">Cotizador</a></li>
+          <li><a class="waves-effect waves-green black-text" href="../html/cotizador.html">
+              <!--| Cotizador--></a></li>
           <li><a class="waves-effect waves-green black-text" href="../html/ubicanos.html">Ubícanos</a></li>
           <li><a class="waves-effect waves-green black-text" href="../html/contacto.html">Contacto</a></li>
-          <li><a class="waves-effect waves-green black-text" href="../html/maquinas.html">Maquinaria DOSED</a></li>
+          <li><a class="waves-effect waves-green black-text" href="../html/maquinas.html">
+              <!--| Maquinaria DOSED--></a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a class="waves-effect waves-green black-text" href="../html/home.html">Inicio</a></li>
           <li><a class="waves-effect waves-green black-text" href="../html/nosotros.html">Nosotros</a></li>
-          <li><a class="waves-effect waves-green black-text" href="../html/servicios.html">Servicios</a></li>
+          <li><a class="waves-effect waves-green black-text" href="../html/servicios.html">
+              <!--| Servicios--></a></li>
           <li><a class="waves-effect waves-green black-text" javascript: void(0)="javascript: void(0)">Proyectos</a></li>
-          <li><a class="waves-effect waves-green black-text" javascript: void(0)="javascript: void(0)">Cotizador</a></li>
+          <li><a class="waves-effect waves-green black-text" javascript: void(0)="javascript: void(0)">
+              <!--| Cotizador--></a></li>
           <li><a class="waves-effect waves-green black-text" href="../html/ubicanos.html">Ubícanos</a></li>
           <li><a class="waves-effect waves-green black-text" href="../html/contacto.html">Contacto</a></li>
-          <li><a class="waves-effect waves-green black-text" href="../html/maquinas.html">Maquinaria DOSED</a></li>
+          <li><a class="waves-effect waves-green black-text" href="../html/maquinas.html">
+              <!--| Maquinaria DOSED--></a></li>
         </ul>
       </div>
       <div class="nav-content">
@@ -157,11 +163,21 @@
   </div>
   <script src="../js/generalidades.js"></script>
   <div class="center">
-    <div class="card white"><img src="../images/opciones/facebook-box.png" alt="logo facebook"/><img src="../images/opciones/twitter-box.png" alt="logo twitter"/></div>
+    <div class="card white"><img id="iconFB" src="../images/opciones/facebook-box.png" alt="logo facebook"/><img id="iconTW" src="../images/opciones/twitter-box.png" alt="logo twitter"/></div>
   </div>
   <div class="grey darken-2">
     <div class="center">
       <label>DOSED SAC Ingeniería y construción - 2017. Todos los derechos reservados.</label>
     </div>
   </div>
+  <script>
+    $(function() {
+        $("#iconFB").on("mouseover", function () {
+            $(this).css("cursor", "pointer")
+            .on("click", function() {
+                window.location.href = "https://web.facebook.com/Dosed-Sac-520541444743360/?ref=br_rs";
+            });
+        });
+    });
+  </script>
 </body>

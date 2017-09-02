@@ -13,11 +13,12 @@
 
 .boton-home:hover {
     background: #3C3C3C;
-    color: black;
+    color: white;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
     padding-left: 30px;
+    cursor: pointer;
 }
 .content-home {
     min-height: 615px;

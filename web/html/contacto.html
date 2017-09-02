@@ -98,11 +98,21 @@
   </script>
   <script src="../js/generalidades.js"></script>
   <div class="center">
-    <div class="card white"><img src="../images/opciones/facebook-box.png" alt="logo facebook"/><img src="../images/opciones/twitter-box.png" alt="logo twitter"/></div>
+    <div class="card white"><img id="iconFB" src="../images/opciones/facebook-box.png" alt="logo facebook"/><img id="iconTW" src="../images/opciones/twitter-box.png" alt="logo twitter"/></div>
   </div>
   <div class="grey darken-2">
     <div class="center">
       <label>DOSED SAC Ingeniería y construción - 2017. Todos los derechos reservados.</label>
     </div>
   </div>
+  <script>
+    $(function() {
+        $("#iconFB").on("mouseover", function () {
+            $(this).css("cursor", "pointer")
+            .on("click", function() {
+                window.location.href = "https://web.facebook.com/Dosed-Sac-520541444743360/?ref=br_rs";
+            });
+        });
+    });
+  </script>
 </body>

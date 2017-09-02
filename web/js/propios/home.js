@@ -38,6 +38,7 @@ $(function(){
             $(this).hide();
             $PDFhover.hide();
             $PDFselected.show();
+            window.location.href = "../docs/Brochure_DOSED_VL.pdf";
         })
         .on("mouseleave", function() {
             $(this).hide();
