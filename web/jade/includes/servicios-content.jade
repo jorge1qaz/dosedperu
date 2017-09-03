@@ -16,41 +16,50 @@ nav.indigo.darken-1
 .container
     .row
         .col.s12.m12#NavConsultoria
-            h4.header Consultoría
-            .card.horizontal
-                .card-image
-                    img(src='../images/servicios/consultoria.png')
-                .card-stacked
-                    .card-content
-                        p Realizamos supervisión general de proyectos correspondiente al seguimiento y control de las actividades de acuerdo a los requerimientos del ente consultor o cliente, basándonos en la alta calidad de nuestro personal especializado y tecnología en equipos y laboratorio. Así mismo, realizamos asesorías geotécnicas emitiendo conceptos técnicos que contribuyan en la solución de problemas geotécnicos de modo práctico, simple y óptimo.
-                    .card-action
-                        a(href='#').indigo-text.darken-1-text 
+            h4.center Consultoría
+            .row
+                .col.m6
+                    br
+                    br
+                    br
+                    p Realizamos supervisión general de proyectos correspondiente al seguimiento y control de las actividades de acuerdo a los requerimientos del ente consultor o cliente, basándonos en la alta calidad de nuestro personal especializado y tecnología en equipos y laboratorio. Así mismo, realizamos asesorías geotécnicas emitiendo conceptos técnicos que contribuyan en la solución de problemas geotécnicos de modo práctico, simple y óptimo.
+                .col.m6
+                    .card-panel.center
+                        //img.responsive-img(src='../images/Servicios/consultoria.png')
+                        .regular.slider
+                            div
+                                img(src="../images/Servicios/consultoria.png", alt="imagen de consultoría").responsive-img.cr
+                            div
+                                img(src="../images/Servicios/consultoria2.png", alt="imagen de consultoría").responsive-img.cr
+                            div
+                                img(src="../images/Servicios/consultoria.png", alt="imagen de consultoría").responsive-img.cr
+            .row
+                .parallax-container
+                    .parallax
+                        img.responsive-img(src="../images/gifs/cons.gif", alt="")
         .col.s12.m12#NavLaboratorio
-            h4.header Laboratorio
-            .card.horizontal
-                .card-image
-                    img(src='../images/servicios/laboratorio1.png')
-                .card-stacked
-                    .card-content
-                        p DOSED ofrece a usted una gran variedad de ensayos de laboratorios, estos son realizados a través de una serie de parámetros analíticos con el fin de aportar las pruebas necesarias para la conformidad del estudio realizado. Contacte hoy a nuestro equipo de expertos para obtener más información.
-                    .card-action
-                        a(href='#').indigo-text.darken-1-text 
+            h4.center Laboratorio
+            .row
+                .col.m6
+                    p DOSED ofrece a usted una gran variedad de ensayos de laboratorios, estos son realizados a través de una serie de parámetros analíticos con el fin de aportar las pruebas necesarias para la conformidad del estudio realizado. Contacte hoy a nuestro equipo de expertos para obtener más información.
+                .col.m6
+                    .card-panel.center
+                        img.responsive-img(src='../images/servicios/laboratorio1.png') 
         .col.s12.m12#NavTopografia
-            h4.header Topografía
-            .card-content
-                p El levantamiento Topográfico es la medición de superficies geográficas en general: predios, terrenos, túneles, irrigaciones; proyectos con precisiones dentro de las normas técnicas más actuales, redes geodésicas , georreferenciación de proyectos, determinación de vértices y diseño de canales de riego, alcantarillados, diseño de carreteras y agua potable.
-                p El levantamiento topográfico es la primera fase del estudio técnico y descriptivo de un terreno. Se trata de examinar la superficie cuidadosamente teniendo en cuenta las características físicas, geográficas y geológicas del terreno, pero también las alteraciones existentes en el terreno y que se deban a la intervención del hombre.
-                p Un levantamiento topográfico consiste en un acopio de datos para poder realizar, con posterioridad, un plano que refleje el mayor detalle y exactitud posible del terreno en cuestión. Además de ser vital para la elaboración del plano del terreno, el levantamiento topográfico es una herramienta muy importante durante los trabajos de edificación porque con ellos se van poniendo las marcas en el terreno que sirven como guía la construcción.
-                ul
-                    li &bull; Topografía de Terrenos
-                    li &bull; Estación Total
-                    li &bull; Coordenadas UTM
-                    li &bull; Levantamiento Cartográfico
-            .card.horizontal
-                .card-image
-                    img(src='../images/servicios/topografia2.png')
-                .card-stacked
-                    
+            h4.center Topografía
+            .row
+                .col.m6
+                    p El levantamiento Topográfico es la medición de superficies geográficas en general: predios, terrenos, túneles, irrigaciones; proyectos con precisiones dentro de las normas técnicas más actuales, redes geodésicas , georreferenciación de proyectos, determinación de vértices y diseño de canales de riego, alcantarillados, diseño de carreteras y agua potable.
+                    p El levantamiento topográfico es la primera fase del estudio técnico y descriptivo de un terreno. Se trata de examinar la superficie cuidadosamente teniendo en cuenta las características físicas, geográficas y geológicas del terreno, pero también las alteraciones existentes en el terreno y que se deban a la intervención del hombre.
+                    p Un levantamiento topográfico consiste en un acopio de datos para poder realizar, con posterioridad, un plano que refleje el mayor detalle y exactitud posible del terreno en cuestión. Además de ser vital para la elaboración del plano del terreno, el levantamiento topográfico es una herramienta muy importante durante los trabajos de edificación porque con ellos se van poniendo las marcas en el terreno que sirven como guía la construcción.
+                    ul.text-roboto
+                        li &bull; Topografía de Terrenos
+                        li &bull; Estación Total
+                        li &bull; Coordenadas UTM
+                        li &bull; Levantamiento Cartográfico
+                .col.m6
+                    .card-panel.center
+                        img.responsive-img(src='../images/servicios/topografia2.png')
             .parallax-container
                 .parallax
                     img.responsive-img(src="../images/gifs/topografia.gif", alt="")
@@ -84,4 +93,5 @@ nav.indigo.darken-1
                         p I am a very simple card. I am good at containing small bits of information.
                     .card-action
                         a(href='#').indigo-text.darken-1-text
+script(src="../js/propios/slick.min.js" type="text/javascript")
 script(src="../js/propios/servicios.js")

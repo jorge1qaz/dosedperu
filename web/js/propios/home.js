@@ -5,7 +5,7 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2000,
       });
     // $("##btnBloque1Consultoria").click(function(){
     //     window.location.href = "../html/servicios.html";
@@ -50,7 +50,7 @@ $(function(){
     $("#imgEXCEL").on("mouseenter", function() {
         $(this).css('cursor','pointer')
         .on("click", function() {
-        window.location.href = "../docs/Lista_de_precios.xlsx";
+        window.location.href = "../docs/Ensayos_en_agregados.pdf";
         })
     });
 
