@@ -29,7 +29,7 @@ $(function(){
     $PDFhover.hide();
     $PDFselected.hide();
 
-    $imgPDF.on("mouseenter", function() {
+    /*$imgPDF.on("mouseenter", function() {
         $(this).hide();
         $PDFselected.hide();
         $PDFhover.show()
@@ -45,14 +45,23 @@ $(function(){
             $PDFselected.hide();
             $imgPDF.show();
         });
+    });*/
+    //mobile
+    $imgPDF.on("click", function() {
+        window.open("../docs/Brochure_DOSED_VL.pdf");
+        //window.location.href = "../docs/Brochure_DOSED_VL.pdf";
+    });
+    $("#imgEXCEL").on("click", function() {
+        //window.location.href = "../docs/Ensayos_en_agregados.pdf";
+        window.open("../docs/Ensayos_en_agregados.pdf");
     });
 
-    $("#imgEXCEL").on("mouseenter", function() {
+    /*$("#imgEXCEL").on("mouseenter", function() {
         $(this).css('cursor','pointer')
         .on("click", function() {
         window.location.href = "../docs/Ensayos_en_agregados.pdf";
         })
-    });
+    });*/
 
     var $block_1 = $("#block_1");
     var $block_2 = $("#block_2");
