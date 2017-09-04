@@ -29,23 +29,9 @@ $(function(){
     $PDFhover.hide();
     $PDFselected.hide();
 
-    /*$imgPDF.on("mouseenter", function() {
-        $(this).hide();
-        $PDFselected.hide();
-        $PDFhover.show()
-        .css('cursor','pointer')
-        .on("click", function() {
-            $(this).hide();
-            $PDFhover.hide();
-            $PDFselected.show();
-            window.location.href = "../docs/Brochure_DOSED_VL.pdf";
-        })
-        .on("mouseleave", function() {
-            $(this).hide();
-            $PDFselected.hide();
-            $imgPDF.show();
-        });
-    });*/
+    $imgPDF.on("mouseenter", function() {
+        $(this).css('cursor','pointer')
+    });
     //mobile
     $imgPDF.on("click", function() {
         window.open("../docs/Brochure_DOSED_VL.pdf");
@@ -56,12 +42,9 @@ $(function(){
         window.open("../docs/Ensayos_en_agregados.pdf");
     });
 
-    /*$("#imgEXCEL").on("mouseenter", function() {
-        $(this).css('cursor','pointer')
-        .on("click", function() {
-        window.location.href = "../docs/Ensayos_en_agregados.pdf";
-        })
-    });*/
+    $("#imgEXCEL").on("mouseenter", function() {
+        $(this).css('cursor','pointer');
+    });
 
     var $block_1 = $("#block_1");
     var $block_2 = $("#block_2");

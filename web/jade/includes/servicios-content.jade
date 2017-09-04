@@ -7,11 +7,11 @@ nav.indigo.darken-1
                 a(href='#NavLaboratorio') Laboratorio
             li.tab
                 a(href='#NavTopografia') Topografía
-            li.tab
+            //li.tab
                 a(href='#NavGeotecnia') Geotecnia
-            li.tab
+            //li.tab
                 a(href='#NavCivil') Civil
-            li.tab
+            //li.tab
                 a(href='#NavEstrucuras') Estructuras
 .container
     .row
@@ -25,7 +25,6 @@ nav.indigo.darken-1
                     p Realizamos supervisión general de proyectos correspondiente al seguimiento y control de las actividades de acuerdo a los requerimientos del ente consultor o cliente, basándonos en la alta calidad de nuestro personal especializado y tecnología en equipos y laboratorio. Así mismo, realizamos asesorías geotécnicas emitiendo conceptos técnicos que contribuyan en la solución de problemas geotécnicos de modo práctico, simple y óptimo.
                 .col.m6
                     .card-panel.center
-                        //img.responsive-img(src='../images/Servicios/consultoria.png')
                         .regular.slider
                             div
                                 img(src="../images/Servicios/consultoria.png", alt="imagen de consultoría").responsive-img.cr
@@ -34,16 +33,57 @@ nav.indigo.darken-1
                             div
                                 img(src="../images/Servicios/consultoria.png", alt="imagen de consultoría").responsive-img.cr
             .row
-                video(width='100%', height='100%', autoplay='', loop='')
-                    source(src="../images/gifs/consultoria.webm" type="video/mp4")
+                .col.m6
+                    video(width='100%', height='100%', autoplay='', loop='')
+                        source(src="../images/gifs/consultoria.mp4" type="video/mp4")
+                .col.m6
         .col.s12.m12#NavLaboratorio
             h4.center Laboratorio
             .row
-                .col.m6
+                .col.m6.s12
+                    br
+                    .center
+                        strong Ensayos de laboratorio
+                    ul.text-roboto
+                        li &bull; Ensayos en agregados  
+                        li &bull; Ensayos en concreto 
+                        li &bull; Extracción, tallado y ensayo de compresión de testigos diamantinos en laboratorio
+                        li &bull; Ensayos en mecánica de suelos
+                        li &bull; Ensayos en agregado para pavimento
+                        li &bull; Ensayos químicos en suelosy agregados
+                        li &bull; Ensayos químicos en agua
+                        li &bull; Ensayos en asfalto 
+                        li &bull; Ensayos en albañilería 
+                .col.m6.s12
+                    .card-panel.center.blue-grey.lighten-5.z-depth-3
+                        .regular.slider
+                            div
+                                img(src="../images/Servicios/laboratorio1.png", alt="imagen de laboratorio").responsive-img.cr
+                            div
+                                img(src="../images/Servicios/laboratorio2.png", alt="imagen de laboratorio").responsive-img.cr
+                            div
+                                img(src="../images/Servicios/trabajadores.png", alt="imagen de laboratorio").responsive-img.cr
+            .row
+                .col.m6.s12
+                    video(width='100%', height='100%', autoplay='', loop='')
+                        source(src="../images/gifs/laboratorio.mp4" type="video/mp4")
+                .col.m6.s12
+                    br
+                    br
+                    br
                     p DOSED ofrece a usted una gran variedad de ensayos de laboratorios, estos son realizados a través de una serie de parámetros analíticos con el fin de aportar las pruebas necesarias para la conformidad del estudio realizado. Contacte hoy a nuestro equipo de expertos para obtener más información.
-                .col.m6
-                    .card-panel.center
-                        img.responsive-img(src='../images/servicios/laboratorio1.png') 
+            .row
+                label Vídeos relacionados
+                hr
+                .col.m3.s12
+                    iframe(width='100%', height='auto', src='https://www.youtube.com/embed/w-70w5cMFSs', frameborder='0', allowfullscreen='')
+                .col.m3.s12
+                    iframe(width='100%', height='auto', src='https://www.youtube.com/embed/Yi8wdl5cN9Y', frameborder='0', allowfullscreen='')
+                .col.m3.s12
+                    iframe(width='100%', height='auto', src='https://www.youtube.com/embed/pM-w_cvk1nA', frameborder='0', allowfullscreen='')
+                .col.m3.s12
+                    iframe(width='100%', height='auto', src='https://www.youtube.com/embed/CAezS3mPzOc', frameborder='0', allowfullscreen='')
+
         .col.s12.m12#NavTopografia
             h4.center Topografía
             .row
@@ -62,7 +102,7 @@ nav.indigo.darken-1
             .parallax-container
                 .parallax
                     img.responsive-img(src="../images/gifs/topografia.gif", alt="")
-        .col.s12.m12#NavGeotecnia
+        //.col.s12.m12#NavGeotecnia
             h4.header Geotecnia
             .card.horizontal
                 .card-image
@@ -72,7 +112,7 @@ nav.indigo.darken-1
                         p I am a very simple card. I am good at containing small bits of information.
                     .card-action
                         a(href='#').indigo-text.darken-1-text 
-        .col.s12.m12#NavCivil
+        //.col.s12.m12#NavCivil
             h4.header Civil
             .card.horizontal
                 .card-image
@@ -82,7 +122,7 @@ nav.indigo.darken-1
                         p I am a very simple card. I am good at containing small bits of information.
                     .card-action
                         a(href='#').indigo-text.darken-1-text 
-        .col.s12.m12#NavEstrucuras
+        //.col.s12.m12#NavEstrucuras
             h4.header Estructuras
             .card.horizontal
                 .card-image
